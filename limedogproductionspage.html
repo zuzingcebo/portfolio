@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>limedogproductionspage</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 50%;
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+        font-size: 20px;
+      }
+      .back-button:hover {
+        background-color: rgb(255, 255, 255);
+      }
+      .gallery-container {
+        width: 80%;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      .gallery-container::-webkit-scrollbar {
+        height: 12px;
+      }
+      .gallery-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .gallery-container::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      .gallery-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .gallery-item {
+        display: inline-block;
+        margin: 10px;
+        transition: transform 0.3s ease;
+      }
+      .gallery-item img,
+      .gallery-item video {
+        height: 500px;
+        width: auto;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .gallery-item img:hover,
+      .gallery-item video:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .video-container {
+        position: relative;
+      }
+      .video-controls {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+      }
+      .video-controls button {
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+      .video-controls button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="back-button" href="main.css">&#8592;</a>
+    <button class="back-button" onclick="history.back()">&#8592;</button>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/Asset 4.png"
+          alt="Image 1"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/business card 2.png"
+          alt="Image 2"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/letterhead 1.png"
+          alt="Image 3"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/Free T-Shirt on Men Mockup-1@1x_1.png"
+          alt="Image 4"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/coffee cups - Copy.png"
+          alt="Image 5"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/billboared 1.png"
+          alt="Image 6"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/packaging carry bag.png"
+          alt="Image 7"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/cafe signage.png"
+          alt="Image 8"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/car parking signage.png"
+          alt="Image 9"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/vehicle branding 1.png"
+          alt="Image 10"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/entrance signage.png"
+          alt="Image 11"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/compliment slip.png"
+          alt="Image 12"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/vehicle branding 2.png"
+          alt="Image 13"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campaign 2 lime dog production/restroom signage.png"
+          alt="Image 14"
+        />
+      </div>
+      <div class="gallery-item video-container">
+        <video id="gallery-video" width="300" height="200">
+          <source
+            src="portfolio/campaign 2 lime dog production/LIME DOG PRODUCTION motion graphics_1.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+          <button id="play-button">Play</button>
+          <button id="pause-button">Pause</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const video = document.getElementById("gallery-video");
+      const playButton = document.getElementById("play-button");
+      const pauseButton = document.getElementById("pause-button");
+
+      playButton.addEventListener("click", () => {
+        video.play();
+      });
+
+      pauseButton.addEventListener("click", () => {
+        video.pause();
+      });
+    </script>
+  </body>
+</html>

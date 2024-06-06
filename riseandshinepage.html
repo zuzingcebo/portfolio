@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>riseandshinepage</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 0, 0);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 50%;
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+        font-size: 20px;
+      }
+      .back-button:hover {
+        background-color: rgb(255, 255, 255);
+      }
+      .gallery-container {
+        width: 80%;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+      .gallery-container::-webkit-scrollbar {
+        height: 12px;
+      }
+      .gallery-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .gallery-container::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+      .gallery-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .gallery-item {
+        display: inline-block;
+        margin: 10px;
+        transition: transform 0.3s ease;
+      }
+      .gallery-item img,
+      .gallery-item video {
+        height: 500px;
+        width: auto;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .gallery-item img:hover,
+      .gallery-item video:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      .video-container {
+        position: relative;
+      }
+      .video-controls {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+      }
+      .video-controls button {
+        padding: 5px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+      .video-controls button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="back-button" href="main.css">&#8592;</a>
+    <button class="back-button" onclick="history.back()">&#8592;</button>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free Small Stationery Set Mockup 1.png"
+          alt="Image 1"
+        />
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Sweatshirt_Mockup_1.png"
+          alt="Image 3"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Billboard_Mockup.png"
+          alt="Image 4"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Billboard_Mockup 2.png"
+          alt="Image 5"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Rectangle_Flag_Mockup_1.png"
+          alt="Image 6"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Billboard_Mockup_3.png"
+          alt="Image 7"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Iphone_13_Pro_Mockup_4.png"
+          alt="Image 8"
+        />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Laptop_Mockup 2.png" alt="Image 9" />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Sweatshirt_Mockup_2.png"
+          alt="Image
+        10"
+        />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Laptop_Mockup.png" alt="Image 11" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Sign_Mockup_1.png" alt="Image 12" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Sign_Mockup_2.png" alt="Image 13" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Sign_Mockup_3.png" alt="Image 14" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Sign_Mockup_4.png" alt="Image 15" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Sign_Mockup_5.png" alt="Image 16" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/Free_Sign_Mockup_6.png" alt="Image 17" />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Thin_Magazine_Mockup.png"
+          alt="Image 18"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Thin_Magazine_Mockup_1.png"
+          alt="Image 19"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Thin_Magazine_Mockup_3.png"
+          alt="Image 20"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Thin_Magazine_Mockup_6.png"
+          alt="Image 21"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Free_Wristband_Mockup_5.png"
+          alt="Image 22"
+        />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/MockUp.png" alt="Image 23" />
+      </div>
+      <div class="gallery-item">
+        <img src="portfolio/campain 4/MockUp 2.png" alt="Image 23" />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Rectangle_Flag_Mockup_1.png"
+          alt="Image 24"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="portfolio/campain 4/Rectangle_Flag_Mockup_3.png"
+          alt="Image 25"
+        />
+      </div>
+  </body>
+</html>
